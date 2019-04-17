@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <TextField fx:id="fullName" prefHeight="35.0" prefWidth="500.0"
+                                           promptText="Enter your full name" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="idNumber" layoutX="10.0" layoutY="10.0" prefHeight="35.0"
+                                           prefWidth="500.0" promptText="Enter your id number" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="address" prefHeight="35.0" prefWidth="500.0"
+                                           promptText="Enter your address" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="email" layoutX="20.0" layoutY="130.0" prefHeight="35.0"
+                                           prefWidth="500.0" promptText="Enter your email" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="nation" layoutX="10.0" layoutY="230.0" prefHeight="35.0"
+                                           prefWidth="500.0" promptText="Enter your nationality" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </TextField>
+                                <HBox>
+                                    <CheckBox fx:id="maleCheckBox" mnemonicParsing="false" text="Male"/>
+                                    <CheckBox fx:id="femaleCheckBox" mnemonicParsing="false" text="Female">
+                                        <HBox.margin>
+                                            <Insets left="10.0"/>
+                                        </HBox.margin>
+                                    </CheckBox>
+                                    <CheckBox fx:id="otherCheckBox" mnemonicParsing="false" text="Other">
+                                        <HBox.margin>
+                                            <Insets left="10.0"/>
+                                        </HBox.margin>
+                                    </CheckBox>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="addUser" alignment="CENTER" mnemonicParsing="false" onAction="#addButtonToDB"
+                                prefHeight="70.0" prefWidth="200.0" text="Add" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="updateUser" alignment="CENTER" mnemonicParsing="false"
+                                onAction="#updateButtonToDB" prefHeight="70.0" prefWidth="200.0" text="Update"
+                                HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="deleteUser" mnemonicParsing="false" onAction="#deleteButtonToDB"
+                                prefHeight="70.0" prefWidth="200.0" text="Delete" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
